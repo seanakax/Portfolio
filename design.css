@@ -1,0 +1,214 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+/* common styles */
+.section {
+  background-color: #dfd9e2;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 3rem 0rem;
+}
+.section-title {
+  margin: 0rem;
+  padding: 0rem;
+  color: rgb(0, 0, 255);
+}
+.box-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* section-card */
+
+.section-card {
+  background: #c3acce;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  width: 32%;
+  box-shadow: none;
+  transition: box-shadow 1s ease-in-out;
+}
+.section-card:hover {
+  box-shadow: 2px 2px 4px 3px #0e023e;
+}
+
+/* navbar */
+
+.me-image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0rem 1rem;
+}
+/* media query for nav */
+@media screen and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+.Itemsbar {
+  width: 100%;
+  display: flex;
+  column-gap: 0.5rem;
+  background: transparent;
+  padding: 1rem 0rem;
+  flex-direction: center;
+  width: 100%;
+}
+
+.navlink {
+  color: White;
+  padding: 2px;
+  text-decoration: none;
+  border: 0;
+  border-radius: 4px;
+  border-bottom: 2px solid black;
+  text-align: center;
+  background-color: #89909f;
+  display: flex;
+}
+
+.navlink:hover {
+  color: blue;
+  border: 2px solid blue;
+}
+/* styles for about me section */
+
+#about-section {
+  background-image: url(./images/Me.jpg);
+  background-origin: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.blur {
+  backdrop-filter: blur(10px);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.details-container {
+  max-width: 80%;
+  background-color: #538083;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  opacity: 0.7;
+}
+
+/* works section */
+
+#work-section {
+  background-color: blue;
+}
+#work-section .section-card {
+  background-color: 2A7F62;
+}
+
+#work-section-title {
+  color: #ffc857;
+}
+/* start of contact me section */
+.contact-form-container {
+  width: 100%;
+}
+
+#contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  width: 100%;
+}
+
+.form-element-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.15rem;
+  width: 35%;
+}
+.form-element-container > label {
+  font-size: 0.85rem;
+}
+.form-element-container > input {
+  padding: 0.5rem;
+  border: 0rem;
+  display: block;
+  width: 100%;
+}
+#message {
+  resize: none;
+  width: 100%;
+  display: inline-block;
+}
+
+#submit {
+  padding: 0.35rem 0rem;
+  display: block;
+  background-color: #f3c98b;
+  border: 0rem;
+  width: 35%;
+  border-radius: 0.25rem;
+}
+/* media query for phone */
+
+@media screen and (max-width: 480px) {
+  .About-me {
+    flex-direction: column;
+  }
+  .Itemsbar {
+    flex-direction: column;
+  }
+  .navlink {
+    padding: 0.25rem 1rem;
+    margin: 0.32rem;
+  }
+  .box-container {
+    flex-direction: column;
+  }
+  .section-card {
+    width: 100%;
+  }
+  .me-image {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+/* media-query for tablet */
+@media screen and (max-width: 520px) {
+  .form-element-container {
+    width: 85%;
+  }
+}

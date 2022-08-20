@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./design.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav>
+      <div class="Itemsbar">
+        <a class="navlink" href="#About-me"> About me </a>
+        <a class="navlink" href="#My-skills"> My skills </a>
+        <a class="navlink" href="#"> My works </a>
+        <a class="navlink" href="#"> Contact me </a>
+      </div>
+    </nav>
+    <div class="section" id="about-section">
+      <div class="about-container">
+        <div class="blur"></div>
+        <img src="./images/Me.jpg" class="me-image" alt="Sean Akanihu" />
+        <div class="details-container">
+          <h1>Sean Akanihu</h1>
+          <p>
+            Sean Akanihu was born November 7, 2011 and owns the company CodEZ.
+            He developed this application for new coders who want to learn. Sean
+            Akanihu makes websites for people 'till this day.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-section section">
+      <h1 class="section-title">My Skills</h1>
+      <p>
+        I specialize in Html, CSS, and Java Script. I make websites for people.
+        To see my works, click the button "My works". To ask me any question or
+        ask me to make you a website, click the button "Contact me".
+      </p>
+      <div class="box-container">
+        <div class="section-card" id="skill-card">
+          <h2>HTML</h2>
+          <p>This is my HTML text.</p>
+        </div>
+        <div class="section-card" id="skill-card">
+          <h2>CSS</h2>
+          <p>This is CSS. I use it to design my HTML text.</p>
+        </div>
+        <div class="section-card" id="skill-card">
+          <h2>JavaScript</h2>
+          <p>JavaScript is for adding special effects to your HTML.</p>
+        </div>
+        <div class="section-card">
+          <h2>CodePen</h2>
+
+          <p>
+            CodePen is an online community for testing and showcasing
+            user-created HTML, CSS and JavaScript code snippets. It functions as
+            an online code editor and open-source learning environment, where
+            developers can create code snippets, called "pens," and test them.
+          </p>
+        </div>
+        <div class="section-card">
+          <h2>Vs code</h2>
+          <br />
+          <p>
+            Visual Studio Code, also commonly referred to as VS Code, is a
+            source-code editor made by Microsoft for Windows, Linux and macOS.
+            Features include support for debugging, syntax highlighting,
+            intelligent code completion, snippets, code refactoring, and
+            embedded Git.
+          </p>
+        </div>
+        <div class="section-card">
+          <h2>Pro-Code</h2>
+
+          <p>
+            Pro-code means writing code in a regular programming language like
+            Python, or a specialized programming language like SQL, and
+            inserting that code as a pluggable module into a larger software
+            system. That Is what pro-code was made to be.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="work-section">
+      <h1 class="section-title" id="work-section-title">My Works</h1>
+      <div class="box-container">
+        <div class="section-card">
+          <h2>RoTube</h2>
+          <p>
+            This was a small video website where there are many tutorials on
+            making something in Roblox Studio.
+          </p>
+        </div>
+        <div class="section-card">
+          <h2>The Html Heading Header</h2>
+          <p>
+            A list made by Sean Akanihu of the different headers from small to
+            big. (H1, H2, H3, H4, H5, H6.)
+          </p>
+        </div>
+        <div class="section-card">
+          <h2>The $ean Akanihu Online shop</h2>
+          <p>
+            A website designed to be a online shop templete to sell prducts
+            online like food supplies, cloths, toys, electronics an so much
+            more!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h1 class="section-title">Contact me</h1>
+      <div class="contact-form-container">
+        <form id="contact-form">
+          <div class="form-element-container">
+            <label for="firstname"> First Name </label>
+
+            <input
+              type="text"
+              id="firstname"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-element-container">
+            <label for="lastname"> Last Name </label>
+
+            <input
+              type="text"
+              id="lastname"
+              placeholder="Enter your last name"
+              required
+            />
+          </div>
+
+          <div class="form-element-container">
+            <label for="email"> Email </label>
+
+            <input
+              placeholder="Enter your email"
+              type="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="form-element-container">
+            <label for="message"> Type in your message </label>
+
+            <textarea id="message" cols="15" rows="5"> </textarea>
+          </div>
+
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
